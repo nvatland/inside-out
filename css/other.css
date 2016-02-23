@@ -1,0 +1,18 @@
+#joy {
+	background: #fefcea; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #fefcea 0%, #f1da36 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #fefcea 0%,#f1da36 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #fefcea 0%,#f1da36 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#sadness {
+	background: #3A77A8; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #3A77A8 0%, #211A55 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #3A77A8 0%,#211A55 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #3A77A8 0%,#211A55 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#anger {
+	background: #E84A4A; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #E84A4A 0%, #C90E11 100%); /* FF3.6-15 */
+	background: -webkit-radial-gradient(center, ellipse cover, #E84A4A 0%,#C90E11 100%); /* Chrome10-25,Safari5.1-6 */
+	background: radial-gradient(ellipse at center, #E84A4A 0%,#C90E11 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
