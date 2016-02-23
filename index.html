@@ -7,6 +7,7 @@
 </head>
 <body>
 	<section id="home">
+		<canvas id="particles"></canvas>
 		<div class="header-text">
 			<h1>the emotions of</h1>
 			<h2>Inside Out</h2>
@@ -14,8 +15,11 @@
 		
 		<div id="joy">
 			<h1>Joy</h1>
-			<!-- <img src="http://vignette2.wikia.nocookie.net/p__/images/0/09/Joy_(Inside_Out).png/revision/latest?cb=20150405005253&path-prefix=protagonist" alt="Joy"> -->
-			<!-- <p>'They all can,' said the Duchess; 'and most of 'em do.' 'I don't know of any that do,' Alice said very politely, feeling quite  pleased to have got into a conversation. 'You don't know much,' said the Duchess; 'and that's a fact.' Alice did not at all like the tone of this remark, and thought it would  be as well to introduce some other subject of conversation. While she  was trying to fix on one, the cook took the cauldron of soup off the  fire, and at once set to work throwing everything within her reach at  the Duchess and the baby&mdash;the fire-irons came first; then followed a  shower of saucepans, plates, and dishes. The Duchess took no notice of  them even when they hit her; and the baby was howling so much already,  that it was quite impossible to say whether the blows hurt it or not. 'Oh, PLEASE mind what you're doing!' cried Alice, jumping up and down in  an agony of terror. 'Oh, there goes his PRECIOUS nose'; as an unusually  large saucepan flew close by it, and very nearly carried it off. 'If everybody minded their own business,' the Duchess said in a hoarse  growl, 'the world would go round a deal faster than it does.'</p> -->
+			<div class="icons">
+				<div class="icons__icon"></div>
+				<div class="icons__icon"></div>
+				<div class="icons__icon"></div>
+			</div>
 		</div>
 		<div id="sadness">
 			<h1>Sadness</h1>
@@ -29,16 +33,12 @@
 		<div id="anger">
 			<h1>Anger</h1>
 		</div>
-		<div class="buttons">
-			<button data-color="home">Home</button>
-			<button data-color="yellow">Joy</button>
-			<button data-color="blue">Sadness</button>
-			<button data-color="purple">Fear</button>
-			<button data-color="green">Disgust</button>
-			<button data-color="red">Anger</button>
+		<div class="navigation">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 440.36 191.63"><defs><style>.cls-1{fill:none;}.cls-2{isolation:isolate;}.cls-3,.cls-7{fill:#b3b3b3;}.cls-4{fill:#e6e6e6;}.cls-5{clip-path:url(#clip-path);}.cls-6{opacity:0.2;}.cls-14,.cls-16,.cls-18,.cls-20,.cls-22,.cls-6,.cls-7{mix-blend-mode:screen;}.cls-16,.cls-18,.cls-20,.cls-22,.cls-7{opacity:0.4;}.cls-8{fill:#a08100;}.cls-9{fill:#012244;}.cls-10{fill:#390054;}.cls-11{fill:#34770e;}.cls-12{fill:#70040e;}.cls-13,.cls-14{fill:#c12028;}.cls-14{opacity:0.6;}.cls-15,.cls-16{fill:#6fb749;}.cls-17,.cls-18{fill:#88489e;}.cls-19,.cls-20{fill:#2a57a6;}.cls-21,.cls-22{fill:#f2d12c;}</style><clipPath id="clip-path"><path class="cls-1" d="M357.67,163.31c-10.64-1.64-31.57-4.3-38.75-13-16-19.37,1.33-45.11,19.25-59.36l4-.15c-57,8.26-118.28,7.6-122,7.55s-60.46.7-117.19-7.44l-4,0c17.92,14.25,39.28,40,23.25,59.36-7.18,8.68-28.11,11.34-38.75,13-5.08.78-7.19,2.51-7.18,4.51,0,2.73,3.84,6,9.2,8,9.6,3.71,20.17,5.26,30.29,6.77,34.56,5.17,69.57,6.37,104.57,6.37s70.23-1.2,104.79-6.37c10.12-1.51,20.8-3.06,30.4-6.77,5.36-2.07,9.24-5.31,9.26-8C364.81,165.81,362.75,164.09,357.67,163.31Z"/></clipPath></defs><title>cp</title><g class="cls-2"><g id="cp"><path id="base-shadow" class="cls-3" d="M77.9,168.55c-10.39,16.23,46.39,20,54.28,20.67,14.89,1.22,29.88,1.6,44.83,2,27.19,0.76,54.39.37,81.57-.67l2.43-.1c20.45-.81,41-1.08,61.32-3.8,9.86-1.32,42.85-3.21,42.11-18.74-9.68-1.78-20.53-1-30.38-1.48l-39.57-1.76-7.8-.35-38.76.64-81.56,1.35-72.45,1.2c-3.81.06-11.66-1.8-15,.11A2.76,2.76,0,0,0,77.9,168.55Z"/><path id="base" class="cls-4" d="M357.67,163.31c-10.64-1.64-31.57-4.3-38.75-13-16-19.37,1.33-45.11,19.25-59.36l4-.15c-57,8.26-118.28,7.6-122,7.55s-60.46.7-117.19-7.44l-4,0c17.92,14.25,39.28,40,23.25,59.36-7.18,8.68-28.11,11.34-38.75,13-5.08.78-7.19,2.51-7.18,4.51,0,2.73,3.84,6,9.2,8,9.6,3.71,20.17,5.26,30.29,6.77,34.56,5.17,69.57,6.37,104.57,6.37s70.23-1.2,104.79-6.37c10.12-1.51,20.8-3.06,30.4-6.77,5.36-2.07,9.24-5.31,9.26-8C364.81,165.81,362.75,164.09,357.67,163.31Z"/><g id="base-highlight"><g class="cls-5"><g class="cls-6"><path class="cls-4" d="M113,89c17.92,14.25,41.28,50,25.25,69.36-7.18,8.68-28.11,11.34-38.75,13-5.08.78-7.19,2.51-7.18,4.51,0,2.73,3.84,6,9.2,8,1.89,0.73,3.82,1.35,5.76,1.93-3-1.85-5-4-5-6s2.1-3.72,7.18-4.51c10.64-1.64,31.57-4.3,38.75-13C164.26,143,140.9,107.21,123,93Z"/></g><g class="cls-6"><path class="cls-4" d="M325.91,89c-17.92,14.25-41.28,50-25.25,69.36,7.18,8.68,28.11,11.34,38.75,13,5.08,0.78,7.19,2.51,7.18,4.51,0,2.73-3.84,6-9.2,8-1.89.73-3.82,1.35-5.76,1.93,3-1.85,5-4,5-6s-2.1-3.72-7.18-4.51c-10.64-1.64-31.57-4.3-38.75-13C274.63,143,298,107.21,315.91,93Z"/></g></g></g><path id="top-shadow" class="cls-3" d="M220.18,98.36c6.3,0.08,181.43,2,214.82-42.2,22.34-29.55-29.46-47.6-76.27-50C310.9,3.77,268,24.75,220.18,25.63,172.35,24.75,129.46,3.77,81.63,6.19,34.82,8.57-17,26.62,5.36,56.17,38.73,100.31,213.72,98.45,220.18,98.36Z"/><path id="top" class="cls-4" d="M220.18,92.36c6.3,0.08,181.43,2,214.82-42.2,22.34-29.55-29.46-47.6-76.27-50C310.9-2.23,268,18.75,220.18,19.63,172.35,18.75,129.46-2.23,81.63.19,34.82,2.57-17,20.62,5.36,50.17,38.73,94.31,213.72,92.45,220.18,92.36Z"/><path id="top-highlight" class="cls-7" d="M100.12,15.8c41.45-2.1,78.62,18.08,120.06,18.84,41.44-.76,78.62-20.94,120.06-18.84,31.72,1.61,64.08,3.52,68.3,20,5-20.63-32.36-25.13-68.3-26.95C298.79,6.77,261.62,27,220.18,27.71,178.74,27,141.56,6.77,100.12,8.87c-35.94,1.82-73.27,6.31-68.3,26.95C36,19.33,68.4,17.41,100.12,15.8Z"/><ellipse id="joy-bottom" class="cls-8" cx="62.47" cy="35.21" rx="31" ry="17.21"/><ellipse id="sadness-bottom" class="cls-9" cx="141.32" cy="52.42" rx="31" ry="17.21"/><ellipse id="fear-bottom" class="cls-10" cx="220.18" cy="61.41" rx="31" ry="17.21"/><ellipse id="disgust-bottom" class="cls-11" cx="299.03" cy="52.54" rx="31" ry="17.21"/><ellipse id="anger-bottom" class="cls-12" cx="377.89" cy="35.33" rx="31" ry="17.21"/><g class="button" data-color="red" id="anger-btn"><ellipse class="cls-13" cx="377.89" cy="31.88" rx="31" ry="17.21"/><path class="cls-14" d="M377.47,20.43c14.12,0,25.7,6,26.89,13.68a8.48,8.48,0,0,0,.11-1.31c0-8.28-12.09-15-27-15s-27,6.71-27,15a8.48,8.48,0,0,0,.11,1.31C351.77,26.45,363.35,20.43,377.47,20.43Z"/></g><g class="button" data-color="green" id="disgust-btn"><ellipse class="cls-15" cx="299.03" cy="49.09" rx="31" ry="17.21"/><path class="cls-16" d="M299.47,37.43c14.12,0,25.7,6,26.89,13.68a8.48,8.48,0,0,0,.11-1.31c0-8.28-12.09-15-27-15s-27,6.71-27,15a8.48,8.48,0,0,0,.11,1.31C273.77,43.45,285.35,37.43,299.47,37.43Z"/></g><g class="button" data-color="purple" id="fear-btn"><ellipse class="cls-17" cx="220.18" cy="58.38" rx="31" ry="17.21"/><path class="cls-18" d="M220.47,46.43c14.12,0,25.7,6,26.89,13.68a8.48,8.48,0,0,0,.11-1.31c0-8.28-12.09-15-27-15s-27,6.71-27,15a8.48,8.48,0,0,0,.11,1.31C194.77,52.45,206.35,46.43,220.47,46.43Z"/></g><g class="button" data-color="blue" id="sadness-btn"><ellipse class="cls-19" cx="141.32" cy="49.09" rx="31" ry="17.21"/><path class="cls-20" d="M141.47,37.43c14.12,0,25.7,6,26.89,13.68a8.48,8.48,0,0,0,.11-1.31c0-8.28-12.09-15-27-15s-27,6.71-27,15a8.48,8.48,0,0,0,.11,1.31C115.77,43.45,127.35,37.43,141.47,37.43Z"/></g><g class="button" data-color="yellow" id="joy-btn"><ellipse class="cls-21" cx="62.47" cy="31.88" rx="31" ry="17.21"/><path class="cls-22" d="M62.47,19.43c14.12,0,25.7,6,26.89,13.68a8.48,8.48,0,0,0,.11-1.31c0-8.28-12.09-15-27-15s-27,6.71-27,15a8.48,8.48,0,0,0,.11,1.31C36.77,25.45,48.35,19.43,62.47,19.43Z"/></g></g></g></svg>
 		</div>
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/canvas.js"></script>
 </body>
 </html>

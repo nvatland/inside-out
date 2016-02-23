@@ -16,13 +16,14 @@ h1 {
 	display: none;
 }
 
-#joy h1, #sadness h1, #fear h1, #anger h1, #disgust h1, #joy.active h1, #sadness.active h1, #fear.active h1, #anger.active h1, #disgust.active h1 {
+/*#joy h1, #sadness h1, #fear h1, #anger h1, #disgust h1, #joy.active h1, #sadness.active h1, #fear.active h1, #anger.active h1, #disgust.active h1 {
 	opacity: 0;
 }
-
+*/
 #home {
 	width: 100vw;
 	height: 100vh;
+	position: relative;
 	background: #fff; /* Old browsers */
 	/*background: -moz-radial-gradient(center, ellipse cover, #fff 0%, #000 100%);*/ /* FF3.6-15 */
 	/*background: -webkit-radial-gradient(center, ellipse cover, #fff 0%,#000 100%);*/ /* Chrome10-25,Safari5.1-6 */
@@ -33,31 +34,70 @@ h1 {
     -o-transition: background 2s ;
     transition: background 2s ;
     display: flex;
-    align-content:center;
+    align-items:center;
     flex-direction:column;
     justify-content:center;
+    overflow: hidden;
 /*	background-color: cadetblue;*/
 }
 
 section#home {
 	background: #eeeeee; /* Old browsers */
-background: -moz-linear-gradient(left, #eeeeee 0%, #cccccc 10%, #1ad826 30%, #08aa13 40%, #ffde4c 45%, #fbbc16 55%, #c90e11 60%, #e02222 70%, #3a77a8 75%, #211a55 85%, #9a10e5 90%, #600893 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #eeeeee 0%,#cccccc 10%,#1ad826 30%,#08aa13 40%,#ffde4c 45%,#fbbc16 55%,#c90e11 60%,#e02222 70%,#3a77a8 75%,#211a55 85%,#9a10e5 90%,#600893 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #eeeeee 0%,#cccccc 10%,#1ad826 30%,#08aa13 40%,#ffde4c 45%,#fbbc16 55%,#c90e11 60%,#e02222 70%,#3a77a8 75%,#211a55 85%,#9a10e5 90%,#600893 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-linear-gradient(left, #fff 0%, #eee 10%, #1ad826 30%, #08aa13 40%, #ffde4c 45%, #fbbc16 55%, #c90e11 60%, #e02222 70%, #3a77a8 75%, #211a55 85%, #9a10e5 90%, #600893 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #fff 0%,#eee 10%,#1ad826 30%,#08aa13 40%,#ffde4c 45%,#fbbc16 55%,#c90e11 60%,#e02222 70%,#3a77a8 75%,#211a55 85%,#9a10e5 90%,#600893 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #fff 0%,#eee 10%,#1ad826 30%,#08aa13 40%,#ffde4c 45%,#fbbc16 55%,#c90e11 60%,#e02222 70%,#3a77a8 75%,#211a55 85%,#9a10e5 90%,#600893 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#600893',GradientType=1 );
 	background-size: 1600% 1600%;
 	background-position: 0% 0%;
 }
 
-.buttons {
+.navigation {
+	width: 70%;
+	position: relative;
+}
+
+#anger-btn:hover .cls-13 {
+	fill: #E0000B;
+}
+#disgust-btn:hover .cls-15 {
+	fill: #65D926;
+}
+#fear-btn:hover .cls-17 {
+	fill:#A117CF;
+}
+#sadness-btn:hover .cls-19 {
+	fill:#004DD1;
+}
+#joy-btn:hover .cls-21 {
+	fill:#FFDA1F;
+}
+canvas {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+/*	opacity: 0.8;
+*/}
+
+.icons {
 	display: flex;
-	align-content:center;
-	justify-content:center;
-	padding-bottom: 100px;
+}
+
+.icons__icons {
+	width: 50px;
+	height: 50px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 50%;
+	margin: 2%;
+}
+
+.navigation svg {
+	width: 100%;
 }
 
 .header-text {
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 	position: relative;
 	top: 0;
 }

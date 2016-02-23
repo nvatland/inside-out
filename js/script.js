@@ -42,9 +42,11 @@ var home = '0%',
 	purple = '96%',
 	delay = 1000;
 
-	$('button').click(function(event) {
+	$('.button').click(function(event) {
 		/* Act on the event */
 		var color = $(this).data('color');
+		$('.navigation').animate({top:'20vh'}, 500);
+		$('canvas').css('opacity', '0.05');
 		switch(color) {
 			case 'yellow':
 				color = yellow;
