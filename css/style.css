@@ -14,6 +14,7 @@ h1 {
 
 #joy, #sadness, #fear, #anger, #disgust {
 	display: none;
+	opacity: 0;
 }
 
 /*#joy h1, #sadness h1, #fear h1, #anger h1, #disgust h1, #joy.active h1, #sadness.active h1, #fear.active h1, #anger.active h1, #disgust.active h1 {
@@ -33,19 +34,19 @@ h1 {
     -ms-transition: background 2s ;
     -o-transition: background 2s ;
     transition: background 2s ;
-    display: flex;
+/*    display: flex;
     align-items:center;
     flex-direction:column;
-    justify-content:center;
+    justify-content:center;*/
     overflow: hidden;
 /*	background-color: cadetblue;*/
 }
 
 section#home {
 	background: #eeeeee; /* Old browsers */
-background: -moz-linear-gradient(left, #fff 0%, #eee 10%, #1ad826 30%, #08aa13 40%, #ffde4c 45%, #fbbc16 55%, #c90e11 60%, #e02222 70%, #3a77a8 75%, #211a55 85%, #9a10e5 90%, #600893 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(left, #fff 0%,#eee 10%,#1ad826 30%,#08aa13 40%,#ffde4c 45%,#fbbc16 55%,#c90e11 60%,#e02222 70%,#3a77a8 75%,#211a55 85%,#9a10e5 90%,#600893 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to right, #fff 0%,#eee 10%,#1ad826 30%,#08aa13 40%,#ffde4c 45%,#fbbc16 55%,#c90e11 60%,#e02222 70%,#3a77a8 75%,#211a55 85%,#9a10e5 90%,#600893 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+background: -moz-linear-gradient(left, #fff 0%, #eee 10%, #1ad826 30%, #08aa13 40%, rgba(255, 222, 76, 0.61) 45%, #fbbc16 55%, #c90e11 60%, #e02222 70%, #3a77a8 75%, #211a55 85%, #9a10e5 90%, #600893 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #fff 0%,#eee 10%,#1ad826 30%,#08aa13 40%,rgba(255, 222, 76, 0.61) 45%,#fbbc16 55%,#c90e11 60%,#e02222 70%,#3a77a8 75%,#211a55 85%,#9a10e5 90%,#600893 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #fff 0%,#eee 10%,#1ad826 30%,#08aa13 40%,rgba(255, 222, 76, 0.61) 45%,#fbbc16 55%,#c90e11 60%,#e02222 70%,#3a77a8 75%,#211a55 85%,#9a10e5 90%,#600893 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#600893',GradientType=1 );
 	background-size: 1600% 1600%;
 	background-position: 0% 0%;
@@ -53,23 +54,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', end
 
 .navigation {
 	width: 70%;
-	position: relative;
+	position: fixed;
+	top:45vh;
+	left:15%;
+	max-width: 900px;
 }
 
 #anger-btn:hover .cls-13 {
 	fill: #E0000B;
+	cursor: pointer;
 }
 #disgust-btn:hover .cls-15 {
 	fill: #65D926;
+	cursor: pointer;
 }
 #fear-btn:hover .cls-17 {
 	fill:#A117CF;
+	cursor: pointer;
 }
 #sadness-btn:hover .cls-19 {
 	fill:#004DD1;
+	cursor: pointer;
 }
 #joy-btn:hover .cls-21 {
 	fill:#FFDA1F;
+	cursor: pointer;
+}
+.button {
+	-moz-transition: fill 0.5s;
+	-webkit-transition: fill 0.5s;
+	transition: fill 0.5s;
 }
 canvas {
 	width: 100%;
@@ -77,29 +91,48 @@ canvas {
 	position: fixed;
 	top: 0;
 	left: 0;
-/*	opacity: 0.8;
-*/}
-
+}
 .icons {
 	display: flex;
+	flex-direction:row;
+	position: relative;
 }
-
-.icons__icons {
+.icons__icon {
 	width: 50px;
 	height: 50px;
 	background-color: rgba(255,255,255,0.5);
 	border-radius: 50%;
-	margin: 2%;
+	padding: 10px;
+	margin: 5px 5px 10px; 
+}
+
+.icons--joy {
+	top: -31%;
+	right: -55%;
+}
+.icons--sadness {
+	left:15%;
+}
+.icons--fear {
+	flex-direction: column;
+	left:52%;
+	top:-25%;
+}
+.icons--anger {
+	flex-direction: column;
+	left: 40%;
+	top: -25%;
 }
 
 .navigation svg {
 	width: 100%;
+	z-index: 0.1;
 }
 
 .header-text {
-	padding-bottom: 50px;
+	padding-bottom: 250px;
 	position: relative;
-	top: 0;
+	top: 20%;
 }
 
 .header-text h1, .header-text h2{
@@ -119,12 +152,105 @@ canvas {
 	font-size: 60px;
 }
 
+.text {
+	position: relative;
+	font-family: 'open sans', sans-serif;
+	width: 30vw;
+	padding-top: 10px; 
+}
+
+.text--joy {
+	top: -35%;
+	left: 55%;
+}
+.text--sadness {
+	top:-45%;
+	left: 15%;
+}
+.text--fear {
+	left: 61%;
+	top: -60%;
+}
+.text--anger {
+	left: 9%;
+	top: -60%;
+}
+
+.icons--disgust, .text--disgust {
+	left: 50%;
+}
 #joy.active, #fear.active, #disgust.active, #anger.active, #sadness.active {
-	display: flex;
+	/*display: flex;
+	flex-direction:column;
 	justify-content:center;
-	align-content:center;
+	align-content:center;*/
+	display: block;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0;
 }
 
 #buttons.active {
 	padding:0;
+}
+
+.floor {
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	height: 20vh;
+	background-color: #ececec;
+	z-index: 0;
+}
+
+.character__joy {
+	width: 12%;
+	position: fixed;
+	top: 5%;
+	left: 23%;
+}
+
+.overlay {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	z-index: 10;
+}
+
+.overlay__joy {
+	background-color: #FFDA1F;
+}
+
+.overlay__sadness {
+	background-color: #004DD1;
+}
+
+.overlay__fear {
+	background-color: #A117CF;
+}
+
+.overlay__disgust {
+	background-color: #65D926;
+}
+
+.overlay__anger {
+	background-color: #E0000B;
+}
+
+.close {
+	width: 30px;
+	height: 30px;
+	position: fixed;
+	top: 30px;
+	right: 30px;
+}
+
+.close svg {
+	width: 100%;
 }
